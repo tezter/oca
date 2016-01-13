@@ -3,9 +3,10 @@ public class Tester {
 public static void main(String[] args) {
 
 Time time = new Time();
-time.hour = 12;
-time.minute = 55;
-time.second = 30;
+int hour;
+time.setHour(12);
+hour = time.getHour();
+System.out.println(hour);
 time.displayTime();
 }
 }
