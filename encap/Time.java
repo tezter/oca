@@ -2,7 +2,7 @@ public class Time {
 
 private int hour;
 public int minute = 1;
-private int second;
+private int second; //  waarom gaat dit goed in displayTime()??
 
 public void displayTime() {
 System.out.println("The time is: " + hour + ":" + minute + ":" + second);
