@@ -1,42 +1,39 @@
-
 import java.lang.*;
+
 public class Time {
+   private int hour;
+   private int minute;
+   private int second;
 
+   public void setTime(int h, int m, int s) {
+      this.hour = h;
+      this.minute = minute;
+      this.second = s;
+      displayTime();
+   }
 
-public Time(int k,int m){
+   public void setTime(int h, int m) {
+      this.hour = h;
+      this.minute = m;
+      this.second = 0;
+      displayTime();
+   }
 
+   public void displayTime() {
+      System.out.println("The time is: " + hour + ":" + minute + ":" + second);
+   }
+
+   public void setHour(int h) {
+//      hour = h;
+      System.out.println("1");
+      if (h >12){
+         System.out.println("2");
+         throw new IllegalArgumentException("input is invalid");
+      }
+      hour = h;
+   }
+
+   public int getHour() {
+      return hour;
+   }
 }
-
-//Time a = new Time(3,15); 
-//Time b = a;
-
-
-
-private int hour;
-public int minute = 1;
-private int second; //  waarom gaat dit goed in displayTime()??
-//private char ery = "error"
-
-public void displayTime() {
-System.out.println("The time is: " + hour + ":" + minute + ":" + second);
-}
-public void setHour(int h){
-System.out.println("1");
-if (h >12){
-System.out.println("2");
-throw new IllegalArgumentException("input is invalid");
-}
-//if (h <12){
-hour = h;
-//}
-//else {
-//hour = 31337;
-//ery = hour;
-//}
-}
-public int getHour() {
-return hour;
-}
-
-}
-
