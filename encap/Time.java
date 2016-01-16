@@ -7,7 +7,7 @@ public class Time {
 
    public void setTime(int h, int m, int s) {
       this.hour = h;
-      this.minute = minute;
+      this.minute = m;
       this.second = s;
       displayTime();
    }
@@ -36,4 +36,12 @@ public class Time {
    public int getHour() {
       return hour;
    }
+   public void setMinute(int m) {
+      minute = m;
+   }
+
+  public int getMinute() {
+    return minute;
+   }
+
 }
