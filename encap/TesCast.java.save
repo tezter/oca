@@ -1,0 +1,11 @@
+public class TesCast {
+
+    public static void main(String []args){
+
+        CasTing a = new CasTing();
+        CasTing b = new CasTingB();
+
+        ((CasTingB)b).CasTingB();
+       
+}
+}
